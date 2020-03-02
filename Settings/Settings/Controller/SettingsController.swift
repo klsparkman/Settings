@@ -11,16 +11,16 @@ import Foundation
 class SettingController {
     
     //Mark: -Source of Truth
-    let settings: [Setting] = {
-        let music = Setting(settingTitle: "Music", icon: #imageLiteral(resourceName: "iTunes"), isOn: false)
+   static let settings: [Setting] = {
+        let music = Setting(settingTitle: "Music", icon: #imageLiteral(resourceName: "iTunes"), isOn: true)
         let appStore = Setting(settingTitle: "App Store", icon: #imageLiteral(resourceName: "appStore"), isOn: false)
         let iBooks = Setting(settingTitle: "IBooks", icon: #imageLiteral(resourceName: "iBooks"), isOn: false)
-        return [music, appStore, IBookscd ~]
+        return [music, appStore, iBooks]
     } ()
     
     //Mark: -Metods
     func toggleIsOn(for setting: Setting) {
-        Setting.isOn = !Setting.isOn
+        setting.isOn = !setting.isOn
         //2B || !2B
         
     }
