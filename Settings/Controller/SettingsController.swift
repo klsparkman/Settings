@@ -15,7 +15,7 @@ class SettingController {
         let music = Setting(settingTitle: "Music", icon: #imageLiteral(resourceName: "iTunes"), isOn: false)
         let appStore = Setting(settingTitle: "App Store", icon: #imageLiteral(resourceName: "appStore"), isOn: false)
         let iBooks = Setting(settingTitle: "IBooks", icon: #imageLiteral(resourceName: "iBooks"), isOn: false)
-        return []
+        return [music, appStore, IBooks]
     } ()
     
     //Mark: -Metods
